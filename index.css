@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;  
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+a:visited {
+  color: black;
+}
+
+li {
+  list-style-type: none; 
+}
+
+
+
+img {
+  width: 240px;
+  height: 160px;
+  /* border: 1px solid grey; */
+  margin: 0 8px 8px 0;
+}
+
+.news-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sports,
+.news,
+.entertainment {
+  padding: 3px;
+  line-height: 1.5;
+  color: white;
+ } 
+
+.sports {
+  background-color: #f11022;
+}
+
+.entertainment {
+  background-color: #de7700;
+}
+
+.news {
+  background-color: #0176ab;
+} 
+ 
+.sports:visited, 
+.news:visited, 
+.entertainment:visited {
+  color: white;
+}
+ 
+.container ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5px;
+}
+
+.container ul li {
+  flex-basis: 240px;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid lightgrey;
+  /* margin: 5px; */
+  padding: 8px 0;
+}
+
+.sun {
+  /* display: block; */
+  /* float: right; */
+  width: 40px;
+  height: 14px;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  background: #be1c39;
+  border-top-right-radius: 5px 10px;
+  border-bottom-right-radius: 5px 10px;
+  border-right: 4px solid orange;
+  font-family: TREBUCHET MS;
+}
+
+.container ul li>div {
+  font-family: AtlasGrotesk, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.title {
+  display: block;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.date {
+  font-weight: normal;
+}
+
+@media (max-width: 600px) {
+
+  .container ul li {
+      flex-basis: 400px;
+      flex-direction: row;
+      min-width: 400px;
+    }
+    img {
+      flex-glow: 1;
+      width: 140px;
+      height: 80px;
+      margin: 0 7px 0 0;
+    }
+
+}
